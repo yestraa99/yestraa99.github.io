@@ -1,0 +1,48 @@
+
+ nav {
+    font-size: 0.875em; /*14px*/
+}
+.contents {clear: both;}
+/*1depth메뉴*/
+.clearfix:after{            /*float속성 해제*/
+    content: "동영상을 플레이";
+    display : block; /*줄바꿈 역할-한라인 다 차지*/
+    clear:both;
+}
+nav > ul >li {
+float : left; /*float은 clear랑 같이 써준다, 뒤에 오는 컨텐츠랑 분리를 시켜준다*/
+
+}
+nav > ul >li > a {
+    display: block;      /* a요소의 크기를 지정*/       
+    padding: 10px 40px; /* y축 x축*/
+    font-weight: 700;
+    background-color: #999;
+    color: #fff;
+
+}
+nav > ul > li:hover > a,  /*마우스 위로 갔을 때*/
+nav > ul > li:active > a {    /*마우스 클릭 했을 때*/
+    color :#ff0;
+}
+/* 2death메뉴*/
+nav ul ul {
+    display : none;             /* ~1 안보이게 하고*/
+    box-shadow: 0 0 2px rgba(105, 53, 53, .3); /*마지막 0은 투명도*/ 
+}
+nav ul ul a {         
+    display : block;
+    padding: 5px 35px 5px 40px;
+    line-height: 30px;
+    font-weight: 400;           /* 기본 굵기*/
+    background-color: #fff;
+    color: #666;
+    transition: all .3s;       /*=300ms 0.3초*/
+}
+nav ul ul a:hover,          /*마우스 위로 가져갔을 때*/
+nav ul ul a:focus {          /*tab키 눌렀을때 적용*/ 
+    background-color: gray;
+}
+nav > ul > li:hover ul{     /* ~2 호버했을 때 block으로 보이게*/
+    display: block;
+}

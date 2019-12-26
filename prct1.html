@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+   $slide-width: 400px;
+$slide-height: 200px;
+
+#slider {
+    width: $slide-width;
+    height: $slide-height;
+    overflow: hidden;
+  border: 1px solid #c69;
+}
+
+.slide {
+    width: $slide-width;
+    height: $slide-height;
+    float: left;
+    position: relative;
+}
+
+#slide-holder {
+  
+    width: 400%;
+    position: relative;
+    left: 0;
+    animation: scroller 10s infinite;
+}
+
+
+@keyframes scroller {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-$slide-width); }
+  66% { transform: translateX(-$slide-width*2); }
+  100% { transform: translateX(0); }
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+
+
+.slide:nth-child(1) {
+  background: #c69;
+}
+
+.slide:nth-child(2) {
+  background: wheat;
+}
+
+.slide:nth-child(3) {
+  background: #eee;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+.slide:nth-child(1) {
+  background: #c69;
+}
+
+.slide:nth-child(2) {
+  background: wheat;
+}
+
+.slide:nth-child(3) {
+  background: #eee;
+}
+    </style>
+    <script>
+    
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <div id="slide-holder">
+          <div class="slide"><img src="https://unsplash.it/400/200/?image=934" alt="" /></div>
+            <div class="slide"><img src="https://unsplash.it/400/200/?image=1045" alt="" /></div>
+            <div class="slide"><img src="https://unsplash.it/400/200/?image=215" alt="" /></div>
+        </div>
+</body>
+</html>

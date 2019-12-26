@@ -1,0 +1,39 @@
+@charset "utf-8";
+*{
+    outline:1px solid red;
+}
+form{
+    margin-top:100px;
+}
+form .container {
+    display: flex;
+    justify-content:center;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 600px;
+}
+.content div {
+    flex:1 1 300px;
+    /* width: 100%; */
+}
+input, button, select {
+    width : 100%;
+}
+input[type=radio] {
+    width: auto;
+}
+.join-title{
+    text-align:center;
+}
+.errmsg {
+color: red;
+font-size: 0.7em;
+font-weight: bold;
+}
+#joinBtn {
+    background-color: rgb(67, 158, 67); 
+}

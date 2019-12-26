@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../1220CSS/PPmain.css">
+<link rel="stylesheet" href="../1220CSS/menu3.css">
+<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap&subset=korean" rel="stylesheet">
+  <script src="../1220JS/PPmain.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+
+    <style>
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="catchbox">
+    <div class="catch"><img src="../1220PPHT/img/catch.jpg" width="100%" height="auto"></div> 
+    </div>
+    <div class="container">
+        <div class="box1">바다마당</div>
+        <!-- <img src="/1220PPHT/img/logo.png"> -->
+        <div class="naviset">
+            <div class="navi coast"><a href="#">실시간바다영상</a></div>
+            <div class="navi talk"><a href="up">실시간제보</a></div>
+            <div class="navi read"><a href="#">게시판</a>
+                <ul>
+                    <li><a href="#">전국고기자랑</a></li>
+                    <li><a href="#">마당주인</a></li>
+                    <li><a href="#">중고팔아요</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="login"><a href="../1220PPHT/login.html">로그아웃/마이페이지</a></div>
+    </div>
+
+
+    <hr>
+    <div class=section1>
+        <div class="mobtab1">
+            <div class="select">
+                <from class="option">
+                    <p1>지역을 선택하세요.</p1>
+                    <input type="text" list="point1">
+                    <datalist id="point1">
+                        <option value="동해중부">
+                        <option value="동해남부">
+                        <option value="남해동부">
+                        <option value="남해중부">
+                        <option value="남해서부">
+                        <option value="서해남부">
+                        <option value="서해중부">
+                    </datalist>
+                    <input type="text" list="point2">
+
+                    <datalist id="point2">
+                        <option value="webcam1">
+                        <option value="webcam2">
+                        <option value="webcam3">
+                        <option value="webcam4">
+                        <option value="webcam5">
+                        <option value="webcam6">
+                        <option value="webcam7">
+                    </datalist>
+
+                    <button id="button"> 실시간보기 </button>
+                </from>
+            </div>
+        </div>
+
+        
+        <div class="desktop">
+            <DIV class="video">
+                <object type="text/html" width="100%" height="600px"
+                    data="//www.youtube.com/embed//-gjQP7ABEK0?rel=0" allowFullScreen controls autoplay>
+                </object>
+            </DIV>
+        </div>
+        <!-- <div class="desktop2">
+                <div><a href="#">기상도<input type="image" src="../1220PPHT/img/s01.jpg" style="width: 100px; height: 80px;" alt="이미지"></a></div>
+                <div><a href="#">기상도<input type="image" src="../1220PPHT/img/s01.jpg" style="width: 100px; height: 80px;" alt="이미지"></a></div>
+                <div><a href="#">기상도<input type="image" src="../1220PPHT/img/s01.jpg" style="width: 100px; height: 80px;" alt="이미지"></a></div>
+                <div><a href="#">기상도<input type="image" src="../1220PPHT/img/s01.jpg" style="width: 100px; height: 80px;" alt="이미지"></a></div>
+            </div>  -->
+    </div>
+
+
+    <div class="imagebutton">
+        <div class="location">
+
+            <div class="tab_content">
+                <input type="radio" name="tabmenu" id="tab01" checked>
+                <label for="tab01">동해안</label>
+                <input type="radio" name="tabmenu" id="tab02">
+                <label for="tab02">서해안</label>
+                <input type="radio" name="tabmenu" id="tab03">
+                <label for="tab03">남해안</label>
+
+               
+                <div class="conbox con1">
+                    <div class="cam"><a href="#">양양솔비치<input type="image" src="../1220PPHT/img/s01.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">강릉정동진<input type="image" src="../1220PPHT/img/s02.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">기장호미곶<input type="image" src="../1220PPHT/img/s03.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">진하해수욕장<input type="image" src="../1220PPHT/img/s07.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">포항영일대<input type="image" src="../1220PPHT/img/s08.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                </div>
+                <div class="conbox con2">
+                    <div class="cam"><a href="#">사천대방파제<input type="image" src="../1220PPHT/img/s04.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">삼천포<input type="image" src="../1220PPHT/img/s05.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                </div>
+
+                <div class="conbox con3">
+                    <div class="cam"><a href="#">남해펜션앞<input type="image" src="../1220PPHT/img/s06.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">왕산마리나<input type="image" src="../1220PPHT/img/s09.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                    <div class="cam"><a href="#">전곡항<input type="image" src="../1220PPHT/img/s10.jpg"
+                                style="width: 160px; height: 100px;" alt="이미지"></a></div>
+                           
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <hr id="bottom2">
+
+
+    <div id="#up"><span style="font-style: oblique; font-weight: 700; font-size: larger;">실시간제보</span> </div>
+    <div class="section2">
+        <div class="leftboard">
+                <img src="../1220PPHT/img/m01.jpg" style="width: 150px; padding: 10px;">
+                <img src="../1220PPHT/img/m02.jpg" style="width: 150px; padding: 10px;">
+                <img src="../1220PPHT/img/m03.jpg" style="width: 150px; padding: 10px;">
+                <img src="../1220PPHT/img/m04.jpg" style="width: 150px; padding: 10px;">
+                <img src="../1220PPHT/img/m05.jpg" style="width: 150px; padding: 10px;">
+                <img src="../1220PPHT/img/m06.jpg" style="width: 150px; padding: 10px;">
+           
+        </div>
+        <div class="rightboard">
+            <img src="../1220PPHT/img/repl1.jpg" style="height: 300px; width: 200px" padding: 20px;>
+            <button id="report">자유 제보글쓰기</button>
+        </div>
+
+    </div>
+
+    </div> 
+    
+    
+    <div class="banner" >
+        <p><span style="font-style: oblique; font-weight: 700; font-size: larger;">바다마당스폰서</span></p>
+        <div class="sponsors">
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p11.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p02.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <!-- <div class="shop"><a href="#"><img src="../1220PPHT/img/p03.jpg" style="width: 160px; height: 100px; "></a></div> -->
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p04.jpg" style="width: 160px; height: 100px; "></a>
+                </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p05.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p06.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p07.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p08.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p09.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+            <div class="shop"><a href="#"><img src="../1220PPHT/img/p10.jpg" style="width: 160px; height: 100px; "></a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+    
+    <div class="footer">
+        <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">바다마당스폰서신청</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">관리자페이지</a></li>
+        </ul>
+        <p>COPYRIGHT© 2019 BADA MADANG.ALL RIGHTS RESERVED<br>
+            | 주소: (00000) 울산광역시 남구 ○○○○○ ○○ <br>
+            | TEL: 010-000-0000 | FAX: (052)000-0000 | Email: : badamandge@badamadang.co.kr
+        </p>
+    </div>
+
+    <!-- <div class="wrapper">
+        <header id="header">
+          <nav id='desktop'>
+            <ul>
+              <li><a href="http://www.naver.com">메뉴1</a></li>
+              <li><a href="http://www.google.com">메뉴2</a></li>
+              <li><a href="#">메뉴3</a></li>
+              <li><a href="#">메뉴4</a></li>
+              <li><a href="#">메뉴5</a></li>
+            </ul>
+          </nav>
+          <nav id='mobile'>
+            <ul>
+              <li><a href="http://www.naver.com">메뉴1</a></li>
+              <li><a href="http://www.google.com">메뉴2</a></li>
+              <li><a href="#">메뉴3</a></li>
+              <li><a href="#">메뉴4</a></li>
+              <li><a href="#">메뉴5</a></li>
+            </ul>
+          </nav>
+          <a href="" class="tab"><span>tab</span><i class="fas fa-bars fa-2x"></i></a>
+        </header>
+        <div class="dim">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, consequuntur dolorem perspiciatis culpa architecto tempora, nihil aliquid odit dolores facere iure beatae amet nam deleniti quaerat laudantium commodi inventore fugit.</div>
+      </div> -->
+
+</body>
+
+</html>
